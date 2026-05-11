@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  background-color: #f5f1ea;
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes veliora-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: veliora-fade-in 1400ms ease-out both;
+}
+
+.fade-in-delay-1 {
+  animation: veliora-fade-in 1400ms ease-out 300ms both;
+}
+
+.fade-in-delay-2 {
+  animation: veliora-fade-in 1400ms ease-out 600ms both;
+}
